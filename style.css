@@ -1,0 +1,63 @@
+nav.navbar{
+    background-color: lightseagreen
+}
+
+#navbarNav a{
+    font-size: 20px;
+    align-items: center;
+    color: white;
+}
+
+#navbarNav a:hover{
+    color: black;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+    margin-bottom: 5px;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+#catalogo{
+    background: white;
+    background-image: url(media/playa.jpg);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    margin-top: -20px;
+}
+
+#catalogo h5{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+#catalogo p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+/*
+#catalogo .card-body{}
+*/  
+
+#productos{
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
