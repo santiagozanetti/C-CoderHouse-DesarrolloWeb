@@ -2,25 +2,7 @@
 
 $colorHover: black
 
-nav.navbar{
-    background-color: $colorPrimario
-}
 
-#navbarNav a{
-    font-size: 20px;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
-
-#navbarNav a:hover{
-    color: $colorHover;
-}
-
-.navbar-brand{
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-}
 
 
 
