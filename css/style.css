@@ -20,7 +20,7 @@ body{
     z-index: 2;
 }
 
-.carousel-caption h5{
+.carousel-caption h1{
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 2px;

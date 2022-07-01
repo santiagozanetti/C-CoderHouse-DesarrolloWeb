@@ -2,49 +2,149 @@
 
 $colorHover: black
 
-
-
-
-
-.card-border{
-    border: solid 10px white;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all ease-out 0.2s;
-    margin-bottom: 5px;
-}
-
-.card-border:hover{
-    transform: scale(1.05);
-}
-
-#catalogo{
+body{
     background: white;
-    background-image: url(media/playa.jpg);
-    background-repeat: repeat-x;
-    background-size: 100%;
-    margin-top: -20px;
-         h5{
-            font-weight: bold;
-            text-align: center;
-            font-size: 24px;
-                p{
-                    text-align: center;
-                    font-size: 18px;
-                    font-weight: 500;
-                    justify-content: center;
-                    }
-            }
+}
+
+.section-padding{
+    padding: 100px 0;    
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-brand .navbar-link{
+    color: #000;
 }
 
 
-/*
-#catalogo .card-body{}
-*/  
+.navbar-nav a:hover{
+    color: rgb(0, 0, 0);
+}
 
-#productos{
-    background-color: rgb(255, 255, 219);
-    background-size: 40px 40px;
+.w-100{
+    height: 100vh;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.tratamientos .card-body i{
+    font-size: 50px;
+}
+
+
+.productos .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+$headings: (
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.5em
+);
+
+$h1: map-get($headings, h1);
+
+h1 {
+    font-size: $h1;
+}
+
+$colores: (
+    primario: aqua
+    secundario: #888
+);
+
+
+
+
+/* ---- css responsive ----*/
+
+
+
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        padding: 17px;
+        font-size: 40px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .sobre-nosotros .text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
 }
 
 footer{
