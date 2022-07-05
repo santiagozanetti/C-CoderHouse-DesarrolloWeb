@@ -67,7 +67,9 @@ body{
     color: #000;
 }
 
-
+.navbar .nav-link a{
+    color: white;
+}
 .navbar-nav a:hover{
     color: rgb(0, 0, 0);
 }
@@ -90,7 +92,7 @@ body{
 .productos .card{
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
-
+/*
 $headings: (
     h1: 4em,
     h2: 3em,
@@ -110,6 +112,22 @@ $colores: (
     primario: aqua
     secundario: #888
 );
+
+
+@mixin pesi ($radius, $eje) {
+    border-radius: $radius;
+    background: #888;
+    box-shadow: $eje $eje ($eje*2) white,  
+                    (-$eje) (-$eje) ($eje*2) #fff    
+}
+
+section{
+    @include pesi(50px, 21px)
+}
+
+*/
+
+
 
 
 
